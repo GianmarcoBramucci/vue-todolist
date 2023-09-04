@@ -1,6 +1,91 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+}
+/* general */
+body{
+    background-color: #f6f8f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+/* header */
+header{
+    background-color: white;
+}
+h1 , .logo{
+    vertical-align: middle;
+} 
+h1{
+    display: inline-block;
+}
+/* main */
+/* parte con i bottoni */
+.conteiner-1{
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.bottone{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+}
+.primo-b{
+    background-color: #779ef9;
+    color: white;
+}
+.secondo-b{
+    border: 1px solid darkgray;
+    background-color: white;
+    color: darkgray;
+}
+/* parte con la lista */
+.conteiner-2{
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 5px;    
+}
+.conteiner-2 h2{
+    margin: 20px 0 15px;
+}
+.check{
+    
+    color: #2cc6ab;
+}
+.cross{
+    text-decoration: line-through;
+    color: red;
+}
+li > * {
+    vertical-align: middle;    
+}
+li{
+    padding-bottom: 10px;
+}
+.label{
+    background-color: currentColor;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.lab-1{
+    background-color:#779ef9;
+}
+.lab-2{
+    background-color: #9c72e4;
+}
+.lab-3{
+    background-color: #64c0a9;
+}

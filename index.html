@@ -5,13 +5,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slider</title>
+    <title>Toboolist</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <div id="app">
+    <header>
+        <h1>Toboolist</h1>
+    </header>
+    <main class="conteiner-2">
+        <!-- parte sopra -->
+        <div class="conteiner-1">
+            <button class="bottone primo-b">Add Task</button>
+            <button class="bottone secondo-b">Add Section</button>
+        </div>
         
+            <!-- parte sotto -->
+            <div v-for="toboo in tobooList" :class="(tobooList.done == true) ? 'cross' : 'check'">
+                <h2><small>&#9660;</small>{{ tobooList.title }}</h2>
+                <ul>
+                    <li>
+                        <p>
+                            {{ tobooList.text }}
+                        </p>
+                    </li>
+                </ul>
+                <!-- esempio di un unità -->
+            </div>
     </div>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>
