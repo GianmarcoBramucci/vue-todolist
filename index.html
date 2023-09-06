@@ -22,12 +22,12 @@
         </div>
         
             <!-- parte sotto -->
-            <div v-for="toboo in tobooList" :class="(tobooList.done == true) ? 'cross' : 'check'">
-                <h2><small>&#9660;</small>{{ tobooList.title }}</h2>
+            <div v-for="toboo in tobooList" :class="(toboo.done == true) ? 'check' : 'cross'">
+                <h2><small>&#9660;</small>{{ toboo.title }}</h2>
                 <ul>
                     <li>
                         <p>
-                            {{ tobooList.text }}
+                            {{ toboo.text }}
                         </p>
                     </li>
                 </ul>

@@ -14,7 +14,7 @@ const { createApp } = Vue
                             text: 'Lorem ipsum dolor sit amet.',
                         }, 
                         {
-                            done: true,
+                            done: false,
                             title: 'Upcoming',
                             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?',
                         }
@@ -24,4 +24,3 @@ const { createApp } = Vue
                     }).mount('#app')
 
 
-                    
