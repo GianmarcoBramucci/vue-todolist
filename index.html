@@ -17,18 +17,24 @@
     <main class="conteiner-2">
         <!-- parte sopra -->
         <div class="conteiner-1">
-            <button class="bottone primo-b">Add Task</button>
-            <button class="bottone secondo-b">Add Section</button>
+            <button class="bottone primo-b" @click="addTask(newTask,addNewTask,tobooList)">Add Task</button>
+            <input v-model="newTask">
+            <!-- <p>la task è: {{ newTask }}</p> -->
         </div>
         
             <!-- parte sotto -->
-            <div v-for="toboo in tobooList" :class="(toboo.done == true) ? 'check' : 'cross'">
+            <div v-for="(toboo,index) in tobooList" :class="(toboo.done == true) ? 'check' : 'cross'">
                 <h2><small>&#9660;</small>{{ toboo.title }}</h2>
                 <ul>
                     <li>
-                        <p>
-                            {{ toboo.text }}
-                        </p>
+                        <div>
+                            <p @click="toogle(index)">
+                                {{ toboo.text }}
+                            </p>
+                            <div>
+                                <button @click="deleteTobo(index)" class="delete-task">x</button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <!-- esempio di un unità -->

@@ -44,6 +44,8 @@ h1{
 .primo-b{
     background-color: #779ef9;
     color: white;
+    margin-left: 20px;
+    margin-right: 30px;
 }
 .secondo-b{
     border: 1px solid darkgray;
@@ -61,20 +63,29 @@ h1{
     margin: 20px 0 15px;
 }
 .check{
-    
-    color: #2cc6ab;
+    color: red;
 }
 .cross{
     text-decoration: line-through;
-    color: red;
+    color: #2cc6ab;
 }
-li > * {
+li > p {
     vertical-align: middle;    
+}
+li > div{
+    display: flex;
+    justify-content: space-between;
 }
 li{
     padding-bottom: 10px;
 }
-.label{
+.delete-task{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+/* .label{
     background-color: currentColor;
     border: none;
     border-radius: 10px;
@@ -88,4 +99,4 @@ li{
 }
 .lab-3{
     background-color: #64c0a9;
-}
+} */
