@@ -4,6 +4,7 @@ Vue.createApp({
     data(){
         return{
             todoList,
+             
         }
     },
     methods: {
