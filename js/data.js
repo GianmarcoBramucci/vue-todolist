@@ -3,7 +3,7 @@ export  const todoList = [
     {
         id: 1,
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, enim!',
-        done: false
+        done: true
     },
     {
         id: 2,
